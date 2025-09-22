@@ -23,7 +23,7 @@ const App = () => {
     Using Redux Toolkit Fetching Data from APIs
   </h1>
 
-  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:ml-[30px] ml-3">
+  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:ml-[30px] ml-3 justify-center items-center">
     {items.map((post, index) => (
       <div key={index} className="bg-white border rounded-xl shadow-md w-[300px] h-[400px] " >
         
