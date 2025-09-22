@@ -45,7 +45,7 @@ const App = () => {
           <h2 className="text-md font-semibold text-gray-800 mt-1">
             {post.title}
           </h2>
-          <p className="text-gray-500 lg:text-sm text-sm"> {post.slug}</p>
+          <p className="text-gray-500 text-[12px] "> {post.slug}</p>
           <p className="text-gray-500 text-sm">Price: {post.price}</p>
           
         </div>
