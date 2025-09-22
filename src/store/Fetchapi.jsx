@@ -1,6 +1,6 @@
 import {createAsyncThunk,createSlice} from '@reduxjs/toolkit'
 export const fetchapi = createAsyncThunk("posts/fetchapi", async () => {
-  const response = await fetch("https://fakestoreapi.com/products");
+  const response = await fetch("https://api.escuelajs.co/api/v1/products");
   return await response.json();
 });
 const Userslice=createSlice({
