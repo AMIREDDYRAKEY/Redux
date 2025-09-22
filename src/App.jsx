@@ -22,10 +22,11 @@ const App = () => {
   <h1 className="text-2xl font-bold mb-6 lg:ml-[40px] lg:mt-3  ml-4">
     Using Redux Toolkit Fetching Data from APIs
   </h1>
+  <div className='flex justify-center'>
 
-  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:ml-[30px] ml-3 justify-center items-center">
+  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:ml-[30px] lg:justify-normal justify-center ">
     {items.map((post, index) => (
-      <div key={index} className="bg-white border rounded-xl shadow-md w-[300px] h-[400px] " >
+      <div key={index} className="bg-white border rounded-xl shadow-md w-[300px] lg:h-[400px] h-[410px] " >
         
         <div className='relative'><img src={post.images}   className="w-full h-[260px] rounded-t-xl  object-fit" />
         <button className='absolute top-3 right-2 text-black' onClick={()=>toggolewishlist(post.id)}>
@@ -44,7 +45,7 @@ const App = () => {
           <h2 className="text-md font-semibold text-gray-800 mt-1">
             {post.title}
           </h2>
-          <p className="text-gray-500 text-sm"> {post.slug}</p>
+          <p className="text-gray-500 lg:text-sm text-sm"> {post.slug}</p>
           <p className="text-gray-500 text-sm">Price: {post.price}</p>
           
         </div>
@@ -52,7 +53,7 @@ const App = () => {
     ))}
   </div>
 </div>
-
+</div>
   )
 }
 
